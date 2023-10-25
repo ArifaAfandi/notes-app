@@ -1,0 +1,25 @@
+@import '../../styles/index.scss';
+
+.main {
+    @include display(row, center, center);
+    height: 50vh;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: $to-do;
+
+    a {
+        width: 100%;
+        background-color: $active;
+        color: white;
+        @include border(0px, 6px);
+        @include display(row, center, center);
+        padding: 12px;
+        font-size: 18px;
+    }
+
+    @include desktop {
+        a {
+            width: 30%;
+        }
+    }
+}

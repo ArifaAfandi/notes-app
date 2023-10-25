@@ -1,0 +1,29 @@
+@import '../../styles/index.scss';
+
+.main {
+    margin-top: 60px;
+
+    .headerTodos {
+
+        @include display(row, space-between, center);
+
+        button {
+            @include border (0px, 6px);
+            background-color: $missing;
+            color: white;
+            padding: 12px;
+        }
+
+    }
+
+    .cards {
+        @include display(column, flex-start, flex-start);
+        margin-top: 30px;
+
+        @include desktop {
+            @include display(row, flex-start, flex-start);
+            gap: 0.5%;
+            flex-wrap: wrap;
+        }
+    }
+}

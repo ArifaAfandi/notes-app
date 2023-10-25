@@ -1,0 +1,13 @@
+@import '../../../styles/index.scss';
+
+.done {
+    margin-top: 60px;
+    @include display(column);
+
+
+    @include desktop {
+        @include display(row, flex-start, flex-start);
+        gap: 0.5%;
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,19 @@
+@import '../../styles/index.scss';
+
+.main {
+    @include display(column, center, center);
+    height: 50vh;
+    color: $to-do;
+
+    h1 {
+        font-size: 50px;
+    }
+
+    ;
+
+    span {
+        font-size: 18px;
+        font-style: italic;
+    }
+    ;
+}

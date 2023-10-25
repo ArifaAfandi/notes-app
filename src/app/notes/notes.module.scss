@@ -1,0 +1,13 @@
+@import '../../styles/index.scss';
+
+.main {
+    background-color: $background;
+    color: white;
+    padding: 5%;
+    padding-bottom: 18%;
+    min-height: 100vh;
+    @include desktop {
+        padding-top: 4%;
+        padding-left: 10%;
+    }
+}
